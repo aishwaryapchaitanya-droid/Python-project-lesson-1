@@ -1,0 +1,8 @@
+print("My daily routine")
+print("My day usually begins at 6:00 a.m. I wake up, brush my teeth, take a bath, get dressed, and have breakfast. At 7:35 a.m., I leave for school.")
+print("I return home at 2:30 p.m. and relax by watching television until 3:30 p.m. After that, I complete my homework and study until 5:30 p.m.")
+print("Then, I have some snacks and get ready to play basketball with my friends at 6:00 p.m.")
+print("I come back home at 8:00 p.m., take a bath, and have dinner at 8:30 p.m.")
+print("After dinner, Usually I do some pending work or study for 1 more hour. I spend some time reading books until I feel sleepy, which is usually around 10:30 p.m.")
+print("Finally, I go to bed by 10:30 p.m. so that I can get enough rest for the next day.")
+print("The total time I spend studying is: 2 hours before I go to play and 1 hour after dinner, so 2+1=", 2+1)
