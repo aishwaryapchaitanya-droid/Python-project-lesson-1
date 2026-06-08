@@ -1,9 +1,9 @@
 print("Birthdays")
-Arjun = "February 4th"
-Saanvi = "April 3rd"
-Rovina = "August 12th"
-Poorna = "March 29th" 
-Vyakhya = "July 26th"
+Arjun = "Arjun: February 4th"
+Saanvi = "Saanvi: April 3rd"
+Rovina = "Rovina: August 12th"
+Poorna = "Poorna: March 29th" 
+Vyakhya = "Vykhya: July 26th"
 print(Arjun)
 print(Saanvi)
 print(Rovina)
