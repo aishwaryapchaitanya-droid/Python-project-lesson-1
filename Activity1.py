@@ -1,4 +1,8 @@
-print("Hello World")
-print("my name is Aishwarya")
-print("I love playing basketball")
-print("the result of 3+5 is:", 3+5)
+a = 5
+print("type of a:", type (a))
+b = 2.5
+print("type of b:", type (b))
+c = "coding"
+print("type of c:", type (c))
+d = True
+print("type of d:", type (d))
