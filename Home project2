@@ -1,0 +1,11 @@
+print("Birthdays")
+Arjun = "February 4th"
+Saanvi = "April 3rd"
+Rovina = "August 12th"
+Poorna = "March 29th" 
+Vyakhya = "July 26th"
+print(Arjun)
+print(Saanvi)
+print(Rovina)
+print(Poorna)
+print(Vyakhya)
