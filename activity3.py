@@ -1,13 +1,8 @@
-#take marks as input from user
-print("Enter marks obtained in each subject: ")
-math = int(input("maths: "))
-science = int(input("science: "))
-english = int(input("english: "))
-hindi = int(input("hindi: "))
+i = int(input("Enter a number: "))
+if (i < 15 ):
+    print("i is smaller than 15")
+    print("I'm in if block")
 
-#Calculating the percentage of marks
-sum = math+science+english+hindi
-print("sum of math, science, english and hindi = ", sum)
-
-perc = (sum/400) *100
-print("percentage = ", perc)
+else:
+    print("i is greater than 15")
+    print("I'm in else block")
