@@ -1,9 +1,31 @@
-actual_cost = float(input("Please Enter the actual product price: "))
-sale_amount = float(input("Please Enter the Sale amount: "))
+#program to check the application of not operator
 
-if (sale_amount > actual_cost ):
-    amount = sale_amount - actual_cost
-    print("total profit = {0}", (amount))
+a = 10 
+b = 12
+c = 12
 
-else:
-    print('No profit!!')
+#not is used here to reverse the result of (a==b)
+print(not(a==b))
+
+#not is used here to reverse the result of (b==c)
+print(not( b==c))
+
+a = "python"
+b = "coding"
+
+#not is used here to check that a is not equal to b 
+if not (a==b):
+    print(a, 'and',b, 'are different')
+
+a = 4
+h = 5
+
+#not is used here to reverse the result of comparing both conditions 
+if not ((a==1)== (b==5)):
+    print("Hello")
+
+a = int(input("Enter a number: "))
+
+#not is used here to check that the number is not equal
+if not (a % 2 == 0):
+    print("a is an odd number")
