@@ -1,8 +1,20 @@
-i = int(input("Enter a number: "))
-if (i < 15 ):
-    print("i is smaller than 15")
-    print("I'm in if block")
+height = float(input("Enter your height in cm: "))
+weight = float (input("Enter your weight in kg: "))
 
+BMI = weight / (height/100)**2
+
+print("your BMI is: ", BMI)
+
+if BMI <= 18.4:
+    print("you are under weight.")
+elif BMI <= 24.9:
+    print("You qre healthy.")
+elif BMI <= 29.9:
+    print("You are over weight")
+elif BMI <= 34.9:
+    print("you are severely over weight")
+elif BMI <= 39.9:
+    print("you are obese.")
 else:
-    print("i is greater than 15")
-    print("I'm in else block")
+    print("you are overly obese")
+    
