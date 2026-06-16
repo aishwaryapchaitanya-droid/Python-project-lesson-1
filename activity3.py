@@ -1,44 +1,16 @@
-print("Enter marks obtained in 5 subjects")
+mean1 = 38
+wrongnumber = 36
+correctnumber = 56
+totalnumber = 40
+#sum of 40 number
+sum = mean1*totalnumber
+print("the sum of 40 numbers is: ", sum)
 
-markone = int(input("Maths: "))
-marktwo = int(input("Science: "))
-markthree = int(input("Social Studies: "))
-markfour = int(input("English: "))
-markfive = int(input("French: "))
+#correct sum of these numebers
+num2 = sum- ((wrongnumber)-(correctnumber))
+print("sum- ((wrongnumber)-(correctnumber)) = ", num2)
 
-total = markone + marktwo + markthree + markfour + markfive 
-avg = int(total / 5)    
-validrange = range(0,101)
+#the correct mean
+mean2 = num2/totalnumber
+print(mean2)
 
-if avg not in validrange:
-    print("Invalid input!")
-
-elif avg in range (91,101):
-    print("Your grade is A1")
-
-elif avg in range (81,91):
-    print("your grade is A2")
-
-elif avg in range (71,81):
-    print("your grade is B1")
-
-elif avg in range (61,71):
-    print("your grade is B2")
-
-elif avg in range(51,61):
-    print("your grade is c1")
-
-elif avg in range(41,51):
-    print("your garde is C2")
-
-elif avg in range(33,41):
-    print("your grade is D")
-
-elif avg in range(21,33):
-    print("your garde is E1")
-
-elif avg in range(11,21):
-    print("your grade is E2")
-
-else:
-    print("Fail")
