@@ -1,9 +1,7 @@
-medical_cause = input("Did you have a medical cause? (Y/N) ").strip().upper()
-if medical_cause == 'Y':
-    print("you are allowed")
-else:
-    atten = int(input("Enter the attendence of the student: "))
-    if atten >= 75:
-        print("Allowed")
-    else:
-        print("Not allowed")
+#input an interger value
+n = int(input("Enter the number whose sum you want to find: "))
+sum = 0
+#iterates for n+1 times: i=1 to n+1
+for i in range (1,n+1):
+    sum = sum+i
+    print("\nsum= ",sum)
