@@ -1,19 +1,10 @@
-units = int(input("Please enter number of units consumed : "))
-if(units<50):
-    amount = units * 2.60
-    surcharge = 25
+#INput a word or a sentence
+string = input("PLease enter your own string: ")
 
-elif (units <= 100):
-    amount = 130+ ((units + 50 )*3.25)
-    surcharge = 35
+string2 = ('')
+#loop for printing in reverse
+for i in string:
+    string2 = i+string2
 
-elif (units <= 200):
-    amount = 130 + 162.50 + ((units - 100)*5.26)
-    surcharge = 45
-
-else: 
-    amount = 130+ 162.50 + 526 + ((units - 200 )* 8.45)
-    surcharge = 75
-
-Total = amount + surcharge
-print("\nElectricity Bill = %.2f" %Total)   
+print("\n the original string = ", string)
+print("\nThe reversed string = ", string2)
