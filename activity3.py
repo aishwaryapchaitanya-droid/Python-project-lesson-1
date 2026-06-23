@@ -1,9 +1,16 @@
-#input number greater than 1
-n = int(input("Enter a value of n: "))
-
-#printnumbers from 0 to 1
-print("number from",n,"to 1 are")
-
-#loop to print numbers
-for i in range (n,0,-1):
-    print(i)
+#take input from user
+num = int(input("Enter a number: "))
+#store original number
+original = sum 
+#initialize sum
+total = 0 
+#find dum of cubes of digits
+while num>0:
+    digit = num % 10  #get last digit
+    total = total + digit**3#add cube of digit
+    num = num//10 #remove last digit
+#check armstrong number
+if original == total: 
+    print("is is an Armstrong number", original)
+else: 
+    print("is is not an Armstrong number", original)
