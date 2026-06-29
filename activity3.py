@@ -1,10 +1,24 @@
-num = input("Enter a number: ")
-length = len(num)
-start = (length  - 1)//2
-end = length//2
-product = 1
-for i in range (start, end + 1):
-    for j in num [i]:
-        product = product * int (j)
+rows = 5
+for i in range (1, rows+1):
+    print(" " * (rows - i), end = "")
 
-print("product of middle digit(s) = ", product)
+    for j in range (i, i + 1):
+        print(j, end = "")
+
+    for j in range (i - 1, 0 , -1):
+        print(j, end = "" )
+    
+    print()
+
+# ------ Bottom half -----
+
+for i in range(rows - 1, 0 , -1):
+    print(" " * (rows - i), end = "")
+
+    for j in range (1, i + 1):
+        print(j, end= "")
+
+    for j in range (i-1, 0 , -1):
+        print(j, end= "")
+
+    print()
