@@ -1,36 +1,8 @@
-import random
-possible_action = ['rock', 'paper', 'scissors']
-while True:
-    
-    user_action = input("Enter rock, paper, scissors or quit: ")
+#Function to calculate the perimeter of the square
+def square_perimeter (side):
+    perimeter = 4*side
+    print("perimeter of square", perimeter)
 
-    if user_action == 'quit':
-        print("Game Over!")
-        break
+side = float(input("Enter the side of the square: "))
 
-    computer_action = random.choice(possible_action)
-
-    print("You chose: ", user_action)
-    print("computer chose: ", computer_action)
-
-    if user_action == computer_action:
-        print("Its a tie!")
-
-    elif user_action == 'rock':
-        if computer_action == 'scissors':
-            print("you win!")
-        else:
-            print("You lose!")
-
-    elif user_action =='paper':
-        if computer_action == 'rock':
-            print("You win!")
-        else:
-            print("You lose!")
-    
-    elif user_action == 'scissors':
-        if computer_action == 'paper':
-            print("you win!")
-        else:
-            print("you lose!")
-    
+square_perimeter(side)
