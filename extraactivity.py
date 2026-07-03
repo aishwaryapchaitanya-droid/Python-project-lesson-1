@@ -1,8 +1,13 @@
-#Function to calculate the perimeter of the square
-def square_perimeter (side):
-    perimeter = 4*side
-    print("perimeter of square", perimeter)
+def addition(num1, num2):
+    result = num1 +num2
+    print("Addition = ", result)
 
-side = float(input("Enter the side of the square: "))
+def subtraction(num1, num2):
+    result = num1 - num2
+    print("Subtraction = ", result)
 
-square_perimeter(side)
+number1 = int(input("Enter the first number: "))
+number2 = int(input("Enter the second number: "))
+
+addition(number1, number2)
+subtraction(number1, number2)
