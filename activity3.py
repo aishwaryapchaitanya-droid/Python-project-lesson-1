@@ -1,24 +1,14 @@
-rows = 5
-for i in range (1, rows+1):
-    print(" " * (rows - i), end = "")
-
-    for j in range (i, i + 1):
-        print(j, end = "")
-
-    for j in range (i - 1, 0 , -1):
-        print(j, end = "" )
+def factorial(x):
+    '''This is a recursive function to find the factorial of an integer'''
+    if x ==0 or x ==1:
+        return 1 
+    else:
+        return x*factorial (x-1)
     
-    print()
+print(factorial.__doc__)
+print("The factorial of 0: ", factorial(0))
+print("The factorial of 1: ", factorial(1))
+print("The factorial of 2: ", factorial(2))
+print("The factorial of 5: ", factorial(5))
+print("The factorial of 10: ", factorial(10))   
 
-# ------ Bottom half -----
-
-for i in range(rows - 1, 0 , -1):
-    print(" " * (rows - i), end = "")
-
-    for j in range (1, i + 1):
-        print(j, end= "")
-
-    for j in range (i-1, 0 , -1):
-        print(j, end= "")
-
-    print()
