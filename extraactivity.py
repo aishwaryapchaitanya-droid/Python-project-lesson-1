@@ -1,13 +1,15 @@
-def addition(num1, num2):
-    result = num1 +num2
-    print("Addition = ", result)
+print("🍕 Welcome to pizza shope!")
+try:
+    quantity = int(input("Enter the number of pizzas: "))
+    price = int(input("Enter the price of one pizza: "))
+    total = quantity*price
 
-def subtraction(num1, num2):
-    result = num1 - num2
-    print("Subtraction = ", result)
+except ValueError:
+    print("PLease enter numbers only.")
 
-number1 = int(input("Enter the first number: "))
-number2 = int(input("Enter the second number: "))
+else:
+    print("Total bill = ", total)
+    print("Thank you for your order! ")
 
-addition(number1, number2)
-subtraction(number1, number2)
+finally:
+    print("Visit Again!")
