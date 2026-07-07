@@ -1,7 +1,9 @@
-var = 5
-while var>0:
-    var = var - 1
-    if var == 5:
-        continue
-    print("\nCurrent variable value", var)
-print("\nGoodbye")
+valid = False
+while not valid:
+    try: 
+        n = int(input ("Enter a number: "))
+        while n%2 == 0:
+            print("Number is divisible by 2")
+        valid = True
+    except ValueError:
+        print("Invalid")
