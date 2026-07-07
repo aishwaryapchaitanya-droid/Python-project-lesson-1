@@ -1,15 +1,20 @@
-for x in range(10):
-    if x % 20 == 0:
-        print("Twist")
+try:
+    num1, num2 = eval(input("Enter ttwo numbers seperated by a comma: "))
+    result = num1 / num2 
+    print("Result is ", result)
 
-    elif x %15 == 0:
-        pass
-    
-    elif x % 5 == 0:
-        print("fizz")
+except ZeroDivisionError:
+    print("Division by zero is error!")
 
-    elif x%3 == 0:
-        print("Buzz")
+except SyntaxError:
+    print("Comma is missing. Enter number seperated by comma like this 1,2")
+
+except:
+    print("Wrong input")
+
+else:
+    print("Exceptions")
+
+finally:
+    print("This will execute no matter what")
     
-    else:
-        print (x)
