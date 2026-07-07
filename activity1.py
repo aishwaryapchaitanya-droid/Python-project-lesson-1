@@ -1,9 +1,6 @@
-a = input ("Enter a word: ")
+try:
+    number = int(input("Enter a number: "))
+    print("The number entered is ", number)
 
-for i in a:
-    if (i == 'A'):
-        print("A is found")
-        break
-    else:
-        print("A is not found")
-        
+except ValueError as ex:
+    print("Exception", ex)
