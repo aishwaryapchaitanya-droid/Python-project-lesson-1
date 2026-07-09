@@ -1,6 +1,16 @@
-try:
-    number = int(input("Enter a number: "))
-    print("The number entered is ", number)
+import random
+playing = True
+number = str(random.randint(0,9))
 
-except ValueError as ex:
-    print("Exception", ex)
+print("I will generate a number from 0 to 9 and you have to guess the number one digit at a time")
+print("The game ends when you get one hero")
+
+while playing:
+    guess = input("Give me you best guess: \n")
+    if number == guess:
+        print("You win the game!")
+        print("The number was", number)
+        break
+    else:
+        print("Your guess isn't quite right, try again\n")
+        
