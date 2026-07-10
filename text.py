@@ -1,114 +1,50 @@
-secret = 27
-print("The secret number is between 0 to 100")
+def add(p,q):
+    return(p+q)
+def subtract(p,q):
+    return(p-q)
+def multiply(p,q):
+    return(p*q)
+def divide(p,q):
+    return(p/q)
 
-#Guess 1
-guess1 = int(input("Guess1 : "))
-
-if guess1 == 27:
-    print("Correct guess")
-elif 17 <=guess1 <= 37: 
-    print("hot")
-elif 17 <= guess1 <= 47:
-    print("Warm")
-elif 10<= guess1 <= 60:
-    print("Cold")
-elif 0 <= guess1 <= 100:
-    print("Ice cold")
-
-i = 5
-for i in range (6):
-    i - 1
-print(i-1,"hearts remaining")
-if i == 0:
-    print("You lost")
+try: 
+    num1 = float(input("Enter number 1: "))
+    num2 = float(input("Enter number 2: "))
 
 
-#Guess2
-guess2 = int(input("Guess2 : "))
-
-if guess2 == 27:
-    print("Correct guess")
-elif 17 <=guess2 <= 37: 
-    print("hot")
-elif 17 <= guess2 <= 47:
-    print("Warm")
-elif 10<= guess2 <= 60:
-    print("Cold")
-elif 0 <= guess2 <= 100:
-    print("Ice cold")
-
-i = 4
-for i in range (5):
-    i - 1
-print(i-1,"hearts remaining")
-if i == 0:
-    print("You lost")
+except ZeroDivisionError:
+    print("not divisible by 0. num2 should be greater than 0.")
+except ValueError:
+    print("Enter numbers only")
 
 
-#Guess3
-guess3 = int(input("Guess3 : "))
-
-if guess3 == 27:
-    print("Correct guess")
-elif 17 <=guess3 <= 37: 
-    print("hot")
-elif 17 <= guess3 <= 47:
-    print("Warm")
-elif 10<= guess3 <= 60:
-    print("Cold")
-elif 0 <= guess3 <= 100:
-    print("Ice cold")
-
-i = 3
-for i in range (4):
-    i - 1
-print(i-1,"hearts remaining")
-if i == 0:
-    print("You lost")
+print("1. Addition")
+print("2. Subtraction")
+print("3.Multiplication")
+print("4. Division")
+user_choice = (input("Pick one of the above operations: "))
 
 
-#Guess 4
-guess4 = int(input("Guess4 : "))
+if user_choice == '1': 
+    sum = num1+num2
+    print("Result = ", sum)
+    
 
-if guess4 == 27:
-    print("Correct guess")
-elif 17 <=guess4 <= 37: 
-    print("hot")
-elif 17 <= guess4 <= 47:
-    print("Warm")
-elif 10<= guess4 <= 60:
-    print("Cold")
-elif 0 <= guess4 <= 100:
-    print("Ice cold")
+elif user_choice == '2':
+    Sub = num1 - num2 
+    print("Result = ", Sub)
 
-i = 2
-for i in range (3):
-    i - 1
-print(i-1,"hearts remaining")
-if i == 0:
-    print("You lost")
+elif user_choice == '3':
+    Mul = num1*num2
+    print("Result = ", Mul)
 
+elif user_choice == '4':
+    Div = num1/num2
+    print("Result = ", Div)
 
-#Guess 5
-guess5 = int(input("Guess5 : "))
+else:
+    print("Invalid choice")
 
-if guess5 == 27:
-    print("Correct guess")
-elif 17 <=guess5 <= 37: 
-    print("hot")
-elif 17 <= guess5 <= 47:
-    print("Warm")
-elif 10<= guess5 <= 60:
-    print("Cold")
-elif 0 <= guess5 <= 100:
-    print("Ice cold")
-
-i = 1
-for i in range (2):
-    i - 1
-print(i-1,"hearts remaining")
-if i == 0:
-    print("You lost")
 
 
 
