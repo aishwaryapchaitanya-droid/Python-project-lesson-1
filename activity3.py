@@ -1,16 +1,13 @@
-import math
+L = [ 4,5,1,2,9,7,10,8]
+print("original list = ", L)
+count = 0 
+for i in L:
+    count +=i
 
-print("The floor and ceiling value  of 23.56 are: " + 
-str(math.ceil(23.56)) + ','+ str(math.floor(23.56)))
+avg = count/len(L)
+print("Sum = ", count)
+print("Average = ", avg)
 
-x = 10 
-y = -15
-
-print("The value of x after copying the sign from y is: " + 
-str (math.copysign(x,y)))
-
-print("Absolute value of -96 and 56 are: " + str(math.fabs(-96)) + ',' 
-+ str(math.fabs(56)))
-
-print("The GCD of 24 and 56: " + str(math.gcd(24,56)))
-
+L.sort()
+print("Smallest elemnet is:" , L[0])
+print("Largest element is: ", L[-1])
