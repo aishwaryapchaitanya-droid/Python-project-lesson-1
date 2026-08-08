@@ -1,29 +1,16 @@
-name = "penguin"
-age = 15
-is_student = True
-weight = 38.5
+def palind(r):
+    e = len(r) -1
+    s = 0 
+    while (s<e):
+        if (r[s]!= r[e]):
+            return False
+        s+=1
+        e-=1
+    return True
 
-print("name : ",name)
-print("Data type of name is ", type(name))
+r = (1,2,3,3,2,1)
 
-print("Age : ",age)
-print("Data type of age is ", type(age))
-
-print("is_student : ",is_student)
-print("Data type of is_student is ", type(is_student))
-
-print("weight : ",weight)
-print("Data type of weight is ", type(weight))
-
-# Typecasting to convert the datatypes of variables 
-print("\n After type casting ...")
-
-age = str(age)
-print(age)
-print("Data type of age is", type(age))
-
-weight = int(weight)
-print(weight)
-print("Data type of weight is", type(weight))
-
-
+if (palind(r)):
+    print("The tuple is Flip-Flop")
+else:
+    print("The tuple is not Flip -Flop")
