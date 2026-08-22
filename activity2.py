@@ -1,11 +1,12 @@
-def match_words(words):
-    ctr = 0
-    lst = []
-    for word in words:
-        if len (word)>1 and word[0] == word[-1]:
-            ctr +=1
-            lst.append(word)
-    print("List of words with first and last characters same\n", lst)
-    return ctr
-count = match_words(['abc', 'cfc', 'xyz', '1221'])
-print("Number of words having fist and last character same: ", count)
+class Vehicle:
+    def __init__(self, max_speed, mileage):
+
+        self.max_speed = max_speed
+        self.mileage = mileage
+modelX = Vehicle(240, 18)
+
+print("Model Max speed", modelX.max_speed)
+print("Model mileage", modelX.mileage)
+
+
+       
