@@ -1,13 +1,18 @@
-L = [ 4,5,1,2,9,7,10,8]
-print("original list = ", L)
-count = 0 
-for i in L:
-    count +=i
+class parrot:
+    species = "bird"
 
-avg = count/len(L)
-print("Sum = ", count)
-print("Average = ", avg)
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
 
-L.sort()
-print("Smallest elemnet is:" , L[0])
-print("Largest element is: ", L[-1])
+blu = parrot("blu", 10)
+woo = parrot("woo", 15)
+
+print("blu is {}".format(blu.species))
+print("woo is {}".format(woo.species))
+
+print("{} is {} years old".format(blu.name,blu.age))
+print("{} is {} years old".format(woo.name,woo.age))
+
+
+
