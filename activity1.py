@@ -1,14 +1,28 @@
-class IOstring():
-    def __init__(self):
-        self.str1 = ""
+class FamilyMember:
+    def __init__(self, eye_color, height_cm):
+        self.eye_color = eye_color
+        self.height_cm = height_cm
 
-    def get_String(self):
-        self.str1 = input("Enter string :")
+    def show_traits(self):
+        print("eye color: ", self.eye_color)
+        print("height: ", self.height_cm)
 
-    def print_String(self):
-        print("result is: ", self.str1.upper())
+class kid(FamilyMember):
 
-str1 = IOstring()
-str1.get_String()
-str1.print_String()
+    def __init__(self, name, age, eye_color, height_cm):
+        self.name = name
+        self.age = age
+        super().__init__(eye_color, height_cm)
 
+    def show_traits(self):
+        print("name: ", self.name)
+        print("age: ", self.age)
+        super().show_traits()
+
+    def favourite_hobby(self, hobby):
+        print(self.name, "loves", hobby)
+
+child = kid ("Maya", 10, "brown", 140)
+child.show_traits()
+child.favourite_hobby("painting")
+print("Is kid a subclass of FamillyMember?", issubclass(kid, FamilyMember))
