@@ -1,25 +1,23 @@
-name = input ("Enter customer name: ")
-customer_id = name[:3].upper()+name [-1].upper()
-prices = [120, 250, 80, 60, 150]
-print("\nOriginal price list: ", prices)
+class Product:
+    def __init__(self, name, price):
+        self.name = name
+        self.__price = price 
 
-total = 0 
-for price in prices:
-    total +=price
+    def setprice(self, newprice):
+        self.__price = newprice
 
-average = total/len(prices)
-prices.sort()
+    def __str__(self):
+        return self.name + " - $" + str(self.__price)
 
-smallest = prices[0]
-largest = prices[-1]
-reverse_prices = prices[::-1]
+item = Product("Chocolate", 50)
 
-bill_text = str(total)
+print(item)
+item.__price = 100
 
-print("\n========== SHOPPING SUMMARY ==========")
-print("customer id: ", customer_id)
-print("total bill: ", bill_text)
-print("average item price: ", average)
-print("cheapest item: ", smallest)
-print("Costliest item: ", largest )
-print("reverse sorted prices: ", reverse_prices)
+print("\nAfter direct change: ")
+print(item)
+
+item.setprice(100)
+
+print("\nAfter using setter: ")
+print(item)
