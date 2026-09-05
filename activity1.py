@@ -1,28 +1,11 @@
-class FamilyMember:
-    def __init__(self, eye_color, height_cm):
-        self.eye_color = eye_color
-        self.height_cm = height_cm
+class myClass:
+    __privatevar = 27;
+    def __privateMeth(self):
+        print("I'm inside class myClass")
 
-    def show_traits(self):
-        print("eye color: ", self.eye_color)
-        print("height: ", self.height_cm)
+    def hello(self):
+        print("private variable value: ",myClass.__privatevar)
 
-class kid(FamilyMember):
-
-    def __init__(self, name, age, eye_color, height_cm):
-        self.name = name
-        self.age = age
-        super().__init__(eye_color, height_cm)
-
-    def show_traits(self):
-        print("name: ", self.name)
-        print("age: ", self.age)
-        super().show_traits()
-
-    def favourite_hobby(self, hobby):
-        print(self.name, "loves", hobby)
-
-child = kid ("Maya", 10, "brown", 140)
-child.show_traits()
-child.favourite_hobby("painting")
-print("Is kid a subclass of FamillyMember?", issubclass(kid, FamilyMember))
+foo =  myClass()
+foo.hello()
+foo.__privMeth 

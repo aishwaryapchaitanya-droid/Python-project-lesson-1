@@ -1,27 +1,20 @@
-class Employee:
+class computer:
     def __init__(self):
-        print('Employee created')
+        self.__maxprice = 900
 
+    def sell(self):
+        print("Selling price: {}".format(self.__maxprice))
 
-# Calling destructor
+    def setMaxPrice(self, price):
+        self.__maxprice = price
+c = computer()
+c.sell()
 
-def __del__(self):
-    print("Destructor called")
-    
-def Create_obj():
-    print('Making Object...')
-    obj = Employee()
-    print('function end...')
-    return obj
+c.__maxprice = 1000
+c.sell()
 
-
-print('Calling Create_obj() function...')
-
-obj = Create_obj()
-
-print('Program End...')
-
-
+c.setMaxPrice(1000)
+c.sell()
 
 
 
