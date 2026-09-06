@@ -1,20 +1,33 @@
-class computer:
-    def __init__(self):
-        self.__maxprice = 900
+from abc import ABC, abstractmethod
 
-    def sell(self):
-        print("Selling price: {}".format(self.__maxprice))
+class Animal(ABC):
+    def move(self):
+        pass
 
-    def setMaxPrice(self, price):
-        self.__maxprice = price
-c = computer()
-c.sell()
+class Human(Animal):
+    def move(self):
+        print("I can walk and run")
 
-c.__maxprice = 1000
-c.sell()
+class Snake(Animal):
+    def move(self):
+        print("I can crawl")
 
-c.setMaxPrice(1000)
-c.sell()
+class dog(Animal):
+    def move(self):
+        print("I can bark")
 
+class Lion(Animal):
+    def move(self):
+        print("I can roar")
 
+R = Human()
+R.move()
 
+K = Snake()
+K.move()
+
+R = dog()
+R.move()
+
+K = Lion()
+K.move()
