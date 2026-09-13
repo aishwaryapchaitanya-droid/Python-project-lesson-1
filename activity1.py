@@ -1,20 +1,12 @@
-from abc import ABC, abstractmethod
+import pygame
 
-class AbsClass(ABC):
-    def print(self, x):
-        print("passed value", x)
+pygame.init()
+screen = pygame.display.set_mode((400,500))
 
-    @abstractmethod
-    def task(self):
-        print("We are inside AbsClass task")
-
-class test_class(AbsClass):
-    def task(self):
-        print("We are inside test_class task")
-
-test_obj = test_class()
-test_obj.task()
-test_obj.print(100)
-
-
-    
+done = False
+while not done:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            pygame.quit()
+    pygame.display.flip()
+ 
